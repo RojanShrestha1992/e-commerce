@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+         <a href="index.html">   
+<!--             <img src="redimg/logo.png" width="125px" alt="">-->
+             <h1 class="mystore">MyStore</h1>
+             
+            </a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-page-1.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="">Feedback</a></li>
+
+            </ul>
+        </nav>
+        <img src="redimg/cart.png" width="30px" height="30px" alt="">
+        <img src="redimg/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Change Yourself<br>Change Your Style</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, a ad!</p>
+            <a href="" class="btn" title="Enjoy your shopping">Explore now</a>
+        </div>
+        <div class="col-2">
+            <img src="redimg/image1.png" alt="">
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+        <!-- --categories-- -->
+
+        <div class="categories">
+            <div class="small-container">
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="redimg/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="redimg/category-2.jpg" alt="">
+
+                </div>
+                <div class="col-3">
+                    <img src="redimg/category-3.jpg" alt="">
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+
+<!-- featured Products -->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="redimg/product-1.jpg" alt="">
+            <h4>Red T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star'></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-2.jpg" alt="">
+            <h4>Cool Shoes</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-3.jpg" alt="">
+            <h4>Trousers</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-4.jpg" alt="">
+            <h4>Pama T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        
+
+    </div>
+</div>
+
+<!-- latest Products -->
+<div class="small-container">
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="redimg/product-5.jpg" alt="">
+            <h4>Red T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star'></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-6.jpg" alt="">
+            <h4>Cool Shoes</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-7.jpg" alt="">
+            <h4>Trousers</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-8.jpg" alt="">
+            <h4>Pama T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="redimg/product-9.jpg" alt="">
+            <h4>Red T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bx-star'></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-10.jpg" alt="">
+            <h4>Cool Shoes</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-11.jpg" alt="">
+            <h4>Trousers</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        <div class="col-4">
+            <img src="redimg/product-12.jpg" alt="">
+            <h4>Pama T-shirt</h4>
+            <div class="ratings">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p>$5.00</p>
+        </div>
+        
+
+    </div>
+    </div>
+
+
+
+    <!-- offers -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="redimg/exclusive.png" class="offer-img" alt="">
+                </div>
+                <div class="col-2">
+                    <p>Now Available on MYStore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>Lorem ipsum dolor sit  asd sadwasd wadsdawamet consectetuicing elit. Id, eius? Harum voluptatibus accusamus architecto sequi magni ipsam corporis tempore dolor!</small> <br>
+                    <a href="" class="btn">Buy Now</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class='bx bxs-quote-left' ></i>
+                    <p>Lorem ipsum, dperiam alias sed. Tempora, soluta totam? Ab temporibus delectus mollitia consectetur, deleniti molestias doloremque soluta, eum architecto adipisci laudantium nobis voluptatum illum corporis nesciunt.</p>
+                    <div class="ratings">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <img src="redimg/user-1.png">
+                    <h3>Frida </h3>
+                </div>
+                <div class="col-3">
+                    <i class='bx bxs-quote-left' ></i>
+                    <p>Lorem ipsum, dolor   alias sed. Tempora, soluta totam? Ab temporibus delectus mollitia consectetur, deleniti molestias doloremque soluta, eum architecto adipisci laudantium nobis voluptatum illum corporis nesciunt.</p>
+                    <div class="ratings">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                    <img src="redimg/user-2.png">
+                    <h3>Katon</h3>
+                </div><div class="col-3">
+                    <i class='bx bxs-quote-left' ></i>
+                    <p>Lorem ipsum, dolor sitam a, soluta totam? Ab temporibus delectus mollitia consectetur, deleniti molestias doloremque soluta, eum architecto adipisci laudantium nobis voluptatum illum corporis nesciunt.</p>
+                    <div class="ratings">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                    <img src="redimg/user-3.png">
+                    <h3>Mary Hagrid</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+               <h3>Download our app</h3>
+               <p>Download for both android and ios</p>
+               <div class="app-logo">
+                   <img src="redimg/play-store.png" alt="">
+                   <img src="redimg/app-store.png" alt="">
+
+               </div>
+            </div>
+            
+            <div class="footer-col-2">
+                            <h1 class="mystore" style="color: white">MyStore</h1>
+
+<!--                <img src="redimg/logo-white.png" alt="">-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, itaque!</p>
+
+             </div>
+             <div class="footer-col-3">
+                <h3 class="ulinks">Useful Links</h3>
+                <ul>
+                    <li><a href="">Blog</a> </li>
+                    <li><a href="">Coupons</a> </li>
+                    <li><a href="">Privacy Policy</a> </li>
+                    <li><a href="">Donate</a> </li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Instagram</a></li>
+
+                  
+                </ul>    
+            </div>
+             
+        </div>
+        <hr>
+        <p class=copyright>&copy Copyright 2022 - MYStore&trade;</p>
+    </div>
+</div>
+
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems")
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+ 
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</body>
+</html>

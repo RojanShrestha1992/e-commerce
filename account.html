@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+         <a href="index.html">   
+<!--             <img src="redimg/logo.png" width="125px" alt="">-->
+                         <h1 class="mystore">MyStore</h1>
+
+            </a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-1.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="">Feedback</a></li>
+
+            </ul>
+        </nav>
+        <img src="redimg/cart.png" width="30px" height="30px" alt="">
+        <img src="redimg/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+
+    </div>
+    
+</div>
+
+
+
+<!-- account-page  -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="redimg/image1.png" width="100%" alt="">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="registor()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form action="" id="LoginForm">
+                        <input type="text" name="" placeholder="Username" required id="">
+                        <input type="password" name=""  placeholder="Password" required id="Password"> 
+                <i class='bx bx-show' id="ShowPassword" onclick="show()" ></i>
+                <i class='bx bx-hide' id="HidePassword" onclick="hide()"></i>
+
+                        <button class="btn" type="submit">Login</button>
+                        <a href="">Forget Password</a>
+                    </form>
+                    <form action="" id="RegForm">
+                        <input type="text" name="" placeholder="Username" required id="">
+                        <input type="email" name="" placeholder="Email"  required id="">
+
+                        <input type="password" name="" placeholder="Password" required id="Password2">
+                <i class='bx bx-show reg' id="ShowPassword2" onclick="show2()" ></i>
+                <i class='bx bx-hide reg' id="HidePassword2" onclick="hide2()"></i>
+
+                        <button class="btn" type="submit">Register</button>
+  
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+               <h3>Download our app</h3>
+               <p>Download for both android and ios</p>
+               <div class="app-logo">
+                   <img src="redimg/play-store.png" alt="">
+                   <img src="redimg/app-store.png" alt="">
+
+               </div>
+            </div>
+            
+            <div class="footer-col-2">
+                                            <h1 class="mystore" style="color: white">MyStore</h1>
+
+<!--                <img src="redimg/logo-white.png" alt="">-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, itaque!</p>
+
+             </div>
+             <div class="footer-col-3">
+                <h3 class="ulinks">Useful Links</h3>
+                <ul>
+                    <li><a href="">Blog</a> </li>
+                    <li><a href="">Coupons</a> </li>
+                    <li><a href="">Privacy Policy</a> </li>
+                    <li><a href="">Donate</a> </li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Instagram</a></li>
+
+                  
+                </ul>    
+            </div>
+             
+        </div>
+        <hr>
+        <p class=copyright>&copy Copyright 2022 - MYStore&trade;</p>
+    </div>
+</div>
+
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems")
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+ 
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+
+
+<!-- js for product details  -->
+<script>
+
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+     SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    } 
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    } 
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+
+
+<!-- js for login  -->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+function registor(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+
+
+}
+function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+
+
+
+}
+
+</script>
+
+
+<!-- js for password -->
+<script>
+    var ShowPassword = document.getElementById("ShowPassword");
+    var HidePassword =  document.getElementById("HidePassword");
+    var Password = document.getElementById("Password");
+
+    function hide(){
+        ShowPassword.style.display = "Block";
+        HidePassword.style.display = "none";
+        Password.type = "text";
+    }
+    function show(){
+        ShowPassword.style.display = "none";
+        HidePassword.style.display = "block";
+        Password.type =  "password";
+    }
+</script>
+
+<!-- js for password Register -->
+<script>
+       var ShowPassword2 = document.getElementById("ShowPassword2");
+    var HidePassword2 =  document.getElementById("HidePassword2");
+    var Password2 = document.getElementById("Password2");
+
+    function hide2(){
+        ShowPassword2.style.display = "Block";
+        HidePassword2.style.display = "none";
+        Password2.type = "text";
+    }
+    function show2(){
+        ShowPassword2.style.display = "none";
+        HidePassword2.style.display = "block";
+        Password2.type =  "password";
+    }
+</script>
+</body>
+</body>
+</html>
